@@ -12,4 +12,9 @@
   <url><loc>https://www.hudsonvaluationgroup.com/schedule.html</loc><priority>0.8</priority><changefreq>monthly</changefreq></url>
   <url><loc>https://www.hudsonvaluationgroup.com/contact.html</loc><priority>0.8</priority><changefreq>monthly</changefreq></url>
   <url><loc>https://www.hudsonvaluationgroup.com/accessibility.html</loc><priority>0.5</priority><changefreq>yearly</changefreq></url>
+  <url><loc>https://www.hudsonvaluationgroup.com/danville.html</loc><priority>0.85</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://www.hudsonvaluationgroup.com/walnut-creek.html</loc><priority>0.85</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://www.hudsonvaluationgroup.com/san-ramon.html</loc><priority>0.85</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://www.hudsonvaluationgroup.com/pleasanton.html</loc><priority>0.85</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://www.hudsonvaluationgroup.com/discovery-bay.html</loc><priority>0.85</priority><changefreq>monthly</changefreq></url>
 </urlset>
