@@ -1,1 +1,105 @@
-{"framework":null}
+{
+  "framework": null,
+  "redirects": [
+    {
+      "source": "/index.html",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/about",
+      "destination": "/about.html",
+      "permanent": true
+    },
+    {
+      "source": "/contact",
+      "destination": "/contact.html",
+      "permanent": true
+    },
+    {
+      "source": "/faq",
+      "destination": "/faq.html",
+      "permanent": true
+    },
+    {
+      "source": "/schedule",
+      "destination": "/schedule.html",
+      "permanent": true
+    },
+    {
+      "source": "/accessibility",
+      "destination": "/accessibility.html",
+      "permanent": true
+    },
+    {
+      "source": "/estate-probate",
+      "destination": "/estate-probate.html",
+      "permanent": true
+    },
+    {
+      "source": "/date-of-death",
+      "destination": "/date-of-death.html",
+      "permanent": true
+    },
+    {
+      "source": "/divorce",
+      "destination": "/divorce.html",
+      "permanent": true
+    },
+    {
+      "source": "/pre-listing",
+      "destination": "/pre-listing.html",
+      "permanent": true
+    },
+    {
+      "source": "/pmi-removal",
+      "destination": "/pmi-removal.html",
+      "permanent": true
+    },
+    {
+      "source": "/for-professionals",
+      "destination": "/for-professionals.html",
+      "permanent": true
+    },
+    {
+      "source": "/danville",
+      "destination": "/danville.html",
+      "permanent": true
+    },
+    {
+      "source": "/walnut-creek",
+      "destination": "/walnut-creek.html",
+      "permanent": true
+    },
+    {
+      "source": "/san-ramon",
+      "destination": "/san-ramon.html",
+      "permanent": true
+    },
+    {
+      "source": "/pleasanton",
+      "destination": "/pleasanton.html",
+      "permanent": true
+    },
+    {
+      "source": "/discovery-bay",
+      "destination": "/discovery-bay.html",
+      "permanent": true
+    },
+    {
+      "source": "/brentwood",
+      "destination": "/brentwood.html",
+      "permanent": true
+    },
+    {
+      "source": "/thank-you",
+      "destination": "/thank-you.html",
+      "permanent": true
+    },
+    {
+      "source": "/services",
+      "destination": "/",
+      "permanent": false
+    }
+  ]
+}
