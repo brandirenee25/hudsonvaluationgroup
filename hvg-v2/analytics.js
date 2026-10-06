@@ -12,6 +12,5 @@
  * - tel_click
  * - mailto_click
  * - calendly_scheduled (Calendly postMessage)
- * - tawk_chat_start
  */
 // MEASUREMENT_ID = 'G-MSJKD3KX58' (inlined in each page <head>; this file is not loaded)
