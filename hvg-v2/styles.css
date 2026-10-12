@@ -968,15 +968,12 @@ a.who-card:focus-visible { outline: 3px solid var(--gold); outline-offset: 2px; 
 .mk-county-card { display: flex; flex-direction: column; align-items: stretch; justify-content: flex-start; gap: 0; min-height: 0; padding: 0; overflow: hidden; background: var(--navy); }
 .mk-county-card:hover { transform: translateY(-1px); background: var(--navy-dark); }
 .mk-county-img { display: flex; align-items: center; justify-content: center; aspect-ratio: 16 / 7; width: 100%; }
-.placeholder-img { background: repeating-linear-gradient(45deg, #E4DED3 0 12px, #DDD6C9 12px 24px); color: #5B5B5B; font-size: 0.78rem; font-weight: 500; letter-spacing: 0.02em; text-align: center; padding: 0.5rem; border-bottom: 1px dashed #B9B0A0; }
 .mk-county-bar { display: flex; align-items: center; justify-content: space-between; padding: 1.05rem 1.25rem; color: var(--white); font-size: 1.02rem; font-weight: 500; }
 .mk-view-all { margin-top: 1.25rem; }
 /* Local Expertise band: full-width background image with dark overlay */
 .mk-band { position: relative; padding: 3.25rem 0 3.5rem; background: none; overflow: hidden; }
-.placeholder-bg { background: linear-gradient(180deg, #8C8A7E 0%, #6F7468 55%, #5D6457 100%); }
 .mk-band::before { content: ""; position: absolute; inset: 0; background: rgba(16, 32, 52, 0.62); }
 .mk-band > .mk-container { position: relative; z-index: 1; }
-.placeholder-tag { position: absolute; top: 0.5rem; right: 0.75rem; z-index: 2; font-size: 0.68rem; color: rgba(255,255,255,0.85); border: 1px dashed rgba(255,255,255,0.6); padding: 0.15rem 0.5rem; border-radius: 4px; }
 .mk-band h2 { font-family: var(--font-serif); }
 .mk-band-primary { background: var(--navy); border-color: var(--navy); }
 .mk-band-primary:hover { background: var(--navy-dark); border-color: var(--navy-dark); }
@@ -1008,16 +1005,13 @@ a.who-card:focus-visible { outline: 3px solid var(--gold); outline-offset: 2px; 
   .mk-hero-content { order: 2; }
 }
 @media (max-width: 600px) { .mk-hero-photo { height: 340px; } }
-/* Illustrated placeholders (temporary, 2026-10-12) */
-.mk-county-img.placeholder-img { position: relative; background: #E9E3D6; padding: 0; border-bottom: 0; overflow: hidden; }
-.mk-county-img svg { position: absolute; inset: 0; width: 100%; height: 100%; display: block; }
-.mk-county-img .placeholder-tag { position: absolute; top: 0.4rem; right: 0.5rem; font-size: 0.62rem; color: #3E3E3E; background: rgba(255,255,255,0.75); border: 1px dashed #8A8172; padding: 0.1rem 0.4rem; border-radius: 4px; }
-.mk-band-art { position: absolute; inset: 0; width: 100%; height: 100%; display: block; }
+.mk-county-img { position: relative; background: #E9E3D6; overflow: hidden; }
+.mk-county-img img { position: absolute; inset: 0; width: 100%; height: 100%; display: block; object-fit: cover; }
+.mk-band-art { position: absolute; inset: 0; width: 100%; height: 100%; display: block; object-fit: cover; }
 .mk-band::before { z-index: 0; }
 .mk-band-art { z-index: 0; }
 .mk-band::before { content: ""; position: absolute; inset: 0; background: rgba(16, 32, 52, 0.58); z-index: 1; }
 .mk-band > .mk-container { z-index: 2; }
-.mk-band > .placeholder-tag { z-index: 3; }
 @media (max-width: 900px) {
   .mk-hero-inner { grid-template-columns: 1fr; }
   .mk-hero-photo { order: 1; height: 380px; }
