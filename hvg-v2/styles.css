@@ -823,3 +823,16 @@ a.who-card:focus-visible { outline: 3px solid var(--gold); outline-offset: 2px; 
   .hero-counties { gap: 0.5rem; }
   .hero-counties .btn { padding: 0.65rem 0.9rem; }
 }
+
+/* County buttons match Request Appraisal (.btn-primary) on homepage + service-areas (2026-10-12) */
+.hero-counties .btn, .county-cards .btn {
+  background: var(--navy); color: var(--white); border-color: var(--navy);
+  font-family: var(--font-sans); font-size: 0.9rem; font-weight: 500; letter-spacing: normal !important;
+  border-radius: var(--radius);
+}
+.hero-counties .btn:hover, .county-cards .btn:hover { background: var(--navy-dark); border-color: var(--navy-dark); color: var(--white); text-decoration: none; }
+.hero-counties .btn:focus-visible, .county-cards .btn:focus-visible { outline: 3px solid var(--gold); outline-offset: 2px; }
+@media (max-width: 600px) {
+  .county-cards .btn { flex: 1 1 100% !important; }
+  .hero-counties .btn, .county-cards .btn { white-space: normal; }
+}
