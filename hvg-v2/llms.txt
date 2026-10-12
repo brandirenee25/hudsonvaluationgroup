@@ -35,6 +35,8 @@ Alameda County: Pleasanton, Livermore, Dublin, Fremont, Castro Valley, Berkeley,
 
 San Joaquin County: Tracy, Stockton, Manteca, Lathrop.
 
+All service areas: [Service Areas](https://www.hudsonvaluationgroup.com/service-areas.html)
+
 City pages with local market detail:
 
 - [Brentwood](https://www.hudsonvaluationgroup.com/brentwood.html)

@@ -107,6 +107,11 @@
       "permanent": true
     },
     {
+      "source": "/service-areas",
+      "destination": "/service-areas.html",
+      "permanent": true
+    },
+    {
       "source": "/services",
       "destination": "/",
       "permanent": false
