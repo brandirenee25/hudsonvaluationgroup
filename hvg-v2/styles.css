@@ -982,7 +982,7 @@ a.who-card:focus-visible { outline: 3px solid var(--gold); outline-offset: 2px; 
 .mk-band-primary:hover { background: var(--navy-dark); border-color: var(--navy-dark); }
 /* Who We Work With: icon + label */
 .mk-who-title { margin-bottom: 2rem; }
-.mk-who-grid { grid-template-columns: repeat(4, minmax(0, 1fr)); max-width: 900px; margin: 0 auto; }
+.mk-who-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); max-width: 900px; margin: 0 auto; row-gap: 2rem; }
 .mk-who-card h3 { font-size: 0.95rem; font-weight: 500; line-height: 1.35; }
 /* Compliance notes, mockup-consistent */
 .mk-notes { background: var(--bg); padding: 0 0 2.75rem; }
