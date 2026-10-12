@@ -764,3 +764,8 @@ a.who-card:focus-visible { outline: 3px solid var(--gold); outline-offset: 2px; 
 @media (max-width: 600px) {
   .hero-photo { width: 180px; height: auto; }
 }
+
+/* Nav: slightly tighter spacing so the added "Service Areas" item keeps one row on desktop (2026-10-12) */
+.nav-inner { max-width: 1160px; }
+.nav-links { gap: 1rem 1.1rem; }
+@media (max-width: 900px) { .nav-links { gap: 1rem; } }
