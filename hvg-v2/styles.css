@@ -1018,3 +1018,41 @@ a.who-card:focus-visible { outline: 3px solid var(--gold); outline-offset: 2px; 
   .mk-hero-content { order: 2; }
 }
 @media (max-width: 600px) { .mk-hero-photo { height: 340px; } }
+
+/* Brentwood resource page (scoped .bw-) */
+.bw-hero { background: linear-gradient(90deg, var(--gold-pale) 0%, var(--gold-pale) 45%, #efe6d6 100%); padding: 3.5rem 0 3rem; }
+.bw-hero .mk-container { max-width: 860px; }
+.bw-hero h1 { font-family: var(--font-serif); font-size: clamp(2.2rem, 4.2vw, 3.4rem); line-height: 1.08; color: var(--ink); margin: 0 0 0.9rem; }
+.bw-credline { font-family: var(--font-serif); font-size: clamp(1.05rem, 1.8vw, 1.3rem); line-height: 1.35; color: var(--ink); margin: 0 0 1.25rem; }
+.bw-hero p { line-height: 1.75; color: var(--charcoal); }
+.bw-hero-actions { display: flex; flex-wrap: wrap; align-items: center; gap: 1rem 1.5rem; margin-top: 1.75rem; }
+.bw-textlink { color: var(--navy); font-weight: 500; }
+.bw-service-grid { grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); }
+.bw-service-grid .mk-service-card h3 { font-size: 1.15rem; }
+.bw-pro-link { text-align: center; margin: 1.75rem 0 0; font-size: 0.95rem; color: var(--charcoal); }
+.bw-section { background: var(--bg); padding: 3rem 0; }
+.bw-narrow { max-width: 860px; }
+.bw-h2 { font-family: var(--font-serif); font-size: clamp(1.6rem, 3vw, 2.1rem); color: var(--ink); margin: 0 0 1rem; }
+.bw-section p { line-height: 1.75; color: var(--charcoal); }
+.bw-bullets { margin: 0.5rem 0 1.25rem; padding-left: 1.25rem; columns: 2; column-gap: 2.5rem; }
+.bw-bullets li { margin: 0 0 0.5rem; line-height: 1.6; break-inside: avoid; }
+.bw-resources { background: var(--white); }
+.bw-intro { max-width: 760px; margin: 0 0 1.75rem; }
+.bw-res-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1.25rem; }
+.bw-res-card { border: 1px solid var(--border); border-top: 3px solid var(--navy); border-radius: var(--radius); background: var(--white); padding: 1.5rem 1.5rem 1.25rem; box-shadow: 0 1px 3px rgba(16,32,52,0.06); }
+.bw-res-card h3 { font-family: var(--font-serif); font-size: 1.2rem; color: var(--ink); margin: 0 0 0.9rem; }
+.bw-res-list { list-style: none; margin: 0; padding: 0; }
+.bw-res-list li { padding: 0.5rem 0; border-top: 1px solid var(--border); font-size: 0.92rem; line-height: 1.45; }
+.bw-res-list li:first-child { border-top: 0; padding-top: 0; }
+.bw-res-list a { color: var(--navy); overflow-wrap: anywhere; }
+.bw-sr { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+.bw-disclaimer { font-size: 0.85rem; line-height: 1.65; color: var(--muted); margin: 1.5rem auto 0; max-width: 860px; text-align: center; }
+.bw-callout { background: var(--gold-pale); border-left: 3px solid var(--gold); border-radius: var(--radius); padding: 1.75rem 2rem; }
+.bw-callout p { margin: 0 0 1.25rem; }
+@media (max-width: 700px) {
+  .bw-res-grid { grid-template-columns: 1fr; }
+  .bw-bullets { columns: 1; }
+  .bw-hero { padding: 2.5rem 0 2.25rem; }
+  .bw-callout { padding: 1.5rem 1.25rem; }
+  .bw-callout .btn, .bw-hero-actions .btn { width: 100%; white-space: normal; text-align: center; }
+}
