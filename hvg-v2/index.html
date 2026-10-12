@@ -52,37 +52,97 @@
 
 <main id="main-content">
 
-  <!-- HERO -->
-  <div class="hero" role="banner">
-    <div class="hero-photo">
-      <picture>
-        <source type="image/webp" srcset="images/brandi-800.webp 800w, images/brandi-1600.webp 1600w" sizes="(max-width: 900px) 100vw, 50vw" />
-        <img src="images/brandi-800.jpg"
-             srcset="images/brandi-800.jpg 800w, images/brandi-1600.jpg 1600w"
-             sizes="(max-width: 900px) 100vw, 50vw"
-             width="800" height="1200" fetchpriority="high"
-             alt="Brandi Hudson, Certified Residential Appraiser serving Contra Costa, Alameda, and San Joaquin Counties, California" />
-      </picture>
-    </div>
-    <div class="hero-content">
-      <div class="hero-logo-mark">Hudson Valuation Group</div>
-      <h1>Residential Appraisals</h1>
-      <p class="hero-credline">Prepared by a California Certified Residential Appraiser</p>
-      <h2 class="hero-area" id="counties-served-hero">COUNTIES SERVED</h2>
-      <nav class="hero-counties" aria-labelledby="counties-served-hero">
-        <a href="service-areas.html#contra-costa" class="btn btn-outline">Contra Costa</a>
-        <a href="service-areas.html#alameda" class="btn btn-outline">Alameda</a>
-        <a href="service-areas.html#san-joaquin" class="btn btn-outline">San Joaquin</a>
-      </nav>
-      <p class="hero-all-areas"><a href="service-areas.html">View All Service Areas</a></p>
-      <p class="hero-tagline" style="font-family:var(--font-serif);font-size:1.35rem;color:var(--navy);margin:0.75rem 0 1rem;font-style:italic;">Clear valuation. When it matters most.</p>
-      <p class="hero-sub">Serving Contra Costa, Alameda, and San Joaquin Counties. Clear valuations for selling, planning, and financial decisions. Each appraisal is developed through detailed analysis, market-supported data, and clear reporting so you can move forward with confidence.</p>
-      <div class="hero-actions">
-        <a href="contact.html" class="btn btn-primary" aria-label="Request appraisal and receive fee and availability within 24 hours">Request Appraisal — Fee &amp; Availability Within 24 Hours</a>
-        <a href="tel:+19252162427" class="btn btn-outline" aria-label="Call Brandi Hudson at 925-216-2427">Call 925-216-2427</a>
+  <div class="mk-top">
+  <!-- HERO (mockup layout 2026-10-12) -->
+  <section class="mk-hero" aria-labelledby="hero-heading">
+    <div class="mk-hero-inner">
+      <div class="mk-hero-content">
+        <div class="mk-eyebrow">Hudson Valuation Group</div>
+        <h1 id="hero-heading">Residential Appraisals</h1>
+        <p class="mk-credline">Prepared by a California Certified Residential Appraiser</p>
+        <div class="mk-rule" aria-hidden="true"></div>
+        <p class="mk-tagline">Clear valuation. When it matters most.</p>
+        <p class="mk-sub">Independent residential appraisals for estate and trust, divorce, pre-listing, PMI, and other private appraisal needs. Detailed analysis, market-supported data, and clear reporting so you can move forward with confidence.</p>
+        <div class="mk-hero-actions">
+          <a href="contact.html" class="btn btn-primary" aria-label="Request appraisal and receive fee and availability within one business day">Request Appraisal — Fee &amp; Availability Within One Business Day</a>
+        </div>
+      </div>
+      <div class="mk-hero-photo">
+        <picture>
+          <source type="image/webp" srcset="images/brandi-800.webp 800w, images/brandi-1600.webp 1600w" sizes="(max-width: 900px) 100vw, 50vw" />
+          <img src="images/brandi-800.jpg"
+               srcset="images/brandi-800.jpg 800w, images/brandi-1600.jpg 1600w"
+               sizes="(max-width: 900px) 100vw, 50vw"
+               width="800" height="1200" fetchpriority="high"
+               alt="Brandi Hudson, Certified Residential Appraiser serving Contra Costa, Alameda, and San Joaquin Counties, California" />
+        </picture>
       </div>
     </div>
+  </section>
+
+  <!-- COUNTIES SERVED -->
+  <section class="mk-counties" aria-labelledby="counties-served">
+    <div class="mk-container">
+      <h2 class="mk-section-label" id="counties-served">COUNTIES SERVED</h2>
+      <nav class="mk-county-grid" aria-labelledby="counties-served">
+        <a href="service-areas.html#contra-costa" class="mk-county-card">
+          <!-- TODO: TEMPORARY illustrated placeholder (.placeholder-img). Replace with an owner-supplied, licensed Contra Costa County photo. -->
+          <span class="mk-county-img placeholder-img" aria-hidden="true"><svg viewBox="0 0 320 140" preserveAspectRatio="xMidYMid slice" aria-hidden="true"><defs><linearGradient id="skyCC" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#BFD4E6"/><stop offset="1" stop-color="#EEE6D3"/></linearGradient></defs><rect width="320" height="140" fill="url(#skyCC)"/><path d="M0 92 L70 70 L120 40 L150 28 L175 38 L215 60 L260 66 L320 80 V140 H0Z" fill="#8E8A6A"/><path d="M0 108 Q60 84 120 98 T240 92 T320 100 V140 H0Z" fill="#C9A45C"/><path d="M0 122 Q80 104 160 118 T320 114 V140 H0Z" fill="#B48A43"/><path d="M0 132 Q90 122 180 130 T320 128 V140 H0Z" fill="#8F6C34"/></svg><span class="placeholder-tag">Illustration placeholder</span></span>
+          <span class="mk-county-bar"><span>Contra Costa County</span><span class="mk-arrow" aria-hidden="true">&rarr;</span></span>
+        </a>
+        <a href="service-areas.html#alameda" class="mk-county-card">
+          <!-- TODO: TEMPORARY illustrated placeholder (.placeholder-img). Replace with an owner-supplied, licensed Alameda County photo. -->
+          <span class="mk-county-img placeholder-img" aria-hidden="true"><svg viewBox="0 0 320 140" preserveAspectRatio="xMidYMid slice" aria-hidden="true"><defs><linearGradient id="skyAL" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#A9C3DC"/><stop offset="1" stop-color="#E9E3D6"/></linearGradient></defs><rect width="320" height="140" fill="url(#skyAL)"/><path d="M0 80 Q60 62 120 74 T240 70 T320 76 V96 H0Z" fill="#8C9A86"/><g fill="#6E7C8C"><rect x="150" y="56" width="10" height="34"/><rect x="163" y="46" width="12" height="44"/><rect x="178" y="60" width="9" height="30"/><rect x="190" y="50" width="11" height="40"/><rect x="204" y="64" width="10" height="26"/><rect x="40" y="70" width="14" height="20"/><rect x="58" y="66" width="10" height="24"/></g><path d="M215 78 L245 62 L275 78" fill="none" stroke="#7A8794" stroke-width="2"/><path d="M215 78 H320" stroke="#7A8794" stroke-width="2"/><rect y="90" width="320" height="50" fill="#5E8BB0"/><path d="M0 104 Q40 100 80 104 T160 104 T240 104 T320 104" fill="none" stroke="#9FC0DA" stroke-width="2"/><path d="M0 120 Q40 116 80 120 T160 120 T240 120 T320 120" fill="none" stroke="#88AECD" stroke-width="2"/></svg><span class="placeholder-tag">Illustration placeholder</span></span>
+          <span class="mk-county-bar"><span>Alameda County</span><span class="mk-arrow" aria-hidden="true">&rarr;</span></span>
+        </a>
+        <a href="service-areas.html#san-joaquin" class="mk-county-card">
+          <!-- TODO: TEMPORARY illustrated placeholder (.placeholder-img). Replace with an owner-supplied, licensed San Joaquin County photo. -->
+          <span class="mk-county-img placeholder-img" aria-hidden="true"><svg viewBox="0 0 320 140" preserveAspectRatio="xMidYMid slice" aria-hidden="true"><defs><linearGradient id="skySJ" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#BCD3E3"/><stop offset="1" stop-color="#EDE8D8"/></linearGradient></defs><rect width="320" height="140" fill="url(#skySJ)"/><path d="M0 62 Q160 54 320 62 V140 H0Z" fill="#7FA05A"/><g stroke="#6A8C48" stroke-width="2"><path d="M0 80 L120 66"/><path d="M0 98 L110 76"/><path d="M200 66 L320 78"/><path d="M210 76 L320 96"/></g><path d="M150 62 C140 80 190 92 160 110 C130 128 170 134 175 140 L215 140 C205 128 175 122 200 104 C225 86 175 76 168 62Z" fill="#5E8BB0"/><path d="M0 120 L120 96 M200 100 L320 124" stroke="#93B46C" stroke-width="3"/></svg><span class="placeholder-tag">Illustration placeholder</span></span>
+          <span class="mk-county-bar"><span>San Joaquin County</span><span class="mk-arrow" aria-hidden="true">&rarr;</span></span>
+        </a>
+      </nav>
+      <p class="mk-view-all"><a href="service-areas.html">View All Service Areas <span aria-hidden="true">&rarr;</span></a></p>
+    </div>
+  </section>
+
   </div>
+
+  <!-- APPRAISAL SERVICES -->
+  <section class="mk-services" aria-labelledby="services-heading">
+    <div class="mk-container">
+      <h2 class="mk-section-label" id="services-heading">APPRAISAL SERVICES</h2>
+      <div class="mk-service-grid" role="list">
+        <div class="mk-service-card" role="listitem">
+          <svg class="mk-icon" viewBox="0 0 48 48" aria-hidden="true"><path d="M8 22 24 9l16 13"/><path d="M12 19v20h24V19"/><path d="M20 39V28h8v11"/></svg>
+          <h3>Pre-Listing<br>Appraisals</h3>
+          <div class="mk-card-rule" aria-hidden="true"></div>
+          <p>Make a more informed initial pricing decision and help reduce the risk associated with unsupported overpricing. Know your value before you list.</p>
+          <a href="pre-listing.html" class="mk-learn" aria-label="Learn more about Pre-Listing Appraisals">Learn More <span aria-hidden="true">&rarr;</span></a>
+        </div>
+        <div class="mk-service-card" role="listitem">
+          <svg class="mk-icon" viewBox="0 0 48 48" aria-hidden="true"><path d="M24 8v32"/><path d="M14 40h20"/><path d="M10 14h28"/><path d="M14 14l-6 13h12z"/><path d="M34 14l-6 13h12z"/></svg>
+          <h3>Divorce<br>Appraisals</h3>
+          <div class="mk-card-rule" aria-hidden="true"></div>
+          <p>A neutral, market-supported opinion of value to assist both parties in understanding property value for settlement.</p>
+          <a href="divorce.html" class="mk-learn" aria-label="Learn more about Divorce Appraisals">Learn More <span aria-hidden="true">&rarr;</span></a>
+        </div>
+        <div class="mk-service-card" role="listitem">
+          <svg class="mk-icon" viewBox="0 0 48 48" aria-hidden="true"><path d="M13 7h16l7 7v27H13z"/><path d="M29 7v7h7"/><path d="M18 22h13M18 28h13M18 34h9"/></svg>
+          <h3>Estate &amp; Trust<br>Appraisals</h3>
+          <div class="mk-card-rule" aria-hidden="true"></div>
+          <p>Date-of-death and retrospective valuations for estate administration, IRS Form 706, stepped-up cost basis documentation, and estate planning purposes.</p>
+          <a href="estate-probate.html" class="mk-learn" aria-label="Learn more about Estate and Trust Appraisals">Learn More <span aria-hidden="true">&rarr;</span></a>
+        </div>
+        <div class="mk-service-card" role="listitem">
+          <svg class="mk-icon" viewBox="0 0 48 48" aria-hidden="true"><circle cx="31" cy="15" r="8"/><path d="M25 21 9 37l4 4 3-3 3 3 3-3-3-3 6-6"/></svg>
+          <h3>PMI &amp; Other<br>Appraisals</h3>
+          <div class="mk-card-rule" aria-hidden="true"></div>
+          <p>If your property value has increased, an appraisal may support a PMI removal request. Your mortgage servicer sets eligibility and valuation requirements.</p>
+          <a href="pmi-removal.html" class="mk-learn" aria-label="Learn more about PMI Removal Appraisals">Learn More <span aria-hidden="true">&rarr;</span></a>
+        </div>
+      </div>
+    </div>
+  </section>
 
   <!-- CREDENTIAL BAR -->
   <div class="cred-bar" role="complementary" aria-label="Professional credentials">
@@ -97,150 +157,52 @@
     </div>
   </div>
 
-  <!-- OPENING -->
-  <section class="bg-white">
-    <div class="container text-center">
-      <span class="label">A Different Appraisal Experience</span>
-      <h2 style="max-width:620px;margin:0 auto 1.5rem;">Clear, well-supported valuations — explained in a way that's easy to understand when it matters most.</h2>
-      <p style="max-width:600px;margin:0 auto;font-size:1.05rem;">Brandi Hudson has 25 years of experience valuing Bay Area residential properties. Her experience in both residential valuation and real estate provides broad market context. Appraisal assignments are performed solely in her independent appraiser capacity. Whether you're settling an estate, navigating a divorce, or preparing to sell, you deserve a credible, well-supported, independent opinion of value — not a guess.</p>
-      <p style="max-width:600px;margin:1.25rem auto 0;font-size:0.92rem;color:var(--muted);font-style:italic;">Appraisal services for CPAs, estate attorneys, financial advisors, trustees, and families.</p>
-    </div>
-  </section>
-
-  <!-- SERVICES — reordered: Pre-Listing, PMI, Estate, Date of Death, Divorce -->
-  <section>
-    <div class="container">
-      <span class="label">Appraisal Services</span>
-      <h2>What we do</h2>
-      <p style="max-width:540px;color:var(--muted);">Each service is focused on one purpose: giving you a credible, well-documented opinion of value for selling, planning, and financial decisions.</p>
-      <div class="service-grid" role="list">
-        <a href="pre-listing.html" class="service-card" role="listitem" aria-label="Pre-Listing Appraisal">
-          <div class="service-icon" aria-hidden="true">◇</div>
-          <h3>Pre-Listing Appraisal</h3>
-          <p>Make a more informed initial pricing decision and help reduce the risk associated with unsupported overpricing. Know your value before you list.</p>
-        </a>
-        <a href="pmi-removal.html" class="service-card" role="listitem" aria-label="PMI Removal Appraisal">
-          <div class="service-icon" aria-hidden="true">❋</div>
-          <h3>PMI Removal</h3>
-          <p>If your property value has increased, an appraisal may support a PMI removal request. Your mortgage servicer sets eligibility and valuation requirements.</p>
-        </a>
-        <a href="estate-probate.html" class="service-card" role="listitem" aria-label="Estate and Trust Appraisal">
-          <div class="service-icon" aria-hidden="true">⚖</div>
-          <h3>Estate &amp; Trust</h3>
-          <p>Credible valuations for private estate settlement, trust administration, inherited property, and heir buyouts throughout Contra Costa, Alameda, and San Joaquin Counties.</p>
-        </a>
-        <a href="date-of-death.html" class="service-card" role="listitem" aria-label="Date of Death Appraisal">
-          <div class="service-icon" aria-hidden="true">✦</div>
-          <h3>Date of Death Appraisal</h3>
-          <p>Retrospective valuations for IRS Form 706, stepped-up basis calculations, and estate planning purposes.</p>
-        </a>
-        <a href="divorce.html" class="service-card" role="listitem" aria-label="Divorce Appraisal">
-          <div class="service-icon" aria-hidden="true">◈</div>
-          <h3>Divorce Appraisal</h3>
-          <p>A neutral, market-supported opinion of value to assist both parties in understanding property value for settlement.</p>
-        </a>
-        <a href="contact.html" class="service-card" style="border-top-color:var(--border);border-top-style:dashed;background:var(--gold-pale);" role="listitem" aria-label="Contact us if unsure which appraisal you need">
-          <div class="service-icon" aria-hidden="true">→</div>
-          <h3>Not sure which you need?</h3>
-          <p>Reach out and we'll help you understand your options — no pressure, no obligation.</p>
-        </a>
+  <!-- SECONDARY CTA BAND -->
+  <!-- TODO: TEMPORARY illustrated rolling-hills placeholder background (.placeholder-img). Replace with an owner-supplied, licensed landscape photo; keep the dark overlay. -->
+  <section class="mk-band" aria-labelledby="band-heading">
+    <svg class="mk-band-art placeholder-img" viewBox="0 0 1200 240" preserveAspectRatio="xMidYMid slice" aria-hidden="true"><defs><linearGradient id="skyB" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#9DB6C9"/><stop offset="1" stop-color="#E2D7BF"/></linearGradient></defs><rect width="1200" height="240" fill="url(#skyB)"/><path d="M0 130 Q150 80 300 110 T600 95 T900 105 T1200 90 V240 H0Z" fill="#8D8E6C"/><path d="M0 160 Q200 120 400 150 T800 140 T1200 150 V240 H0Z" fill="#B9974F"/><path d="M0 190 Q250 160 500 185 T1000 175 T1200 185 V240 H0Z" fill="#9C7A3C"/><path d="M0 215 Q300 200 600 212 T1200 208 V240 H0Z" fill="#6E5A2E"/></svg>
+    <span class="placeholder-tag" aria-hidden="true">Illustration placeholder</span>
+    <div class="mk-container">
+      <h2 id="band-heading">Local Expertise. Independent Perspective.</h2>
+      <p>Serving Contra Costa, Alameda, and San Joaquin Counties.</p>
+      <div class="mk-band-actions">
+        <a href="contact.html" class="btn btn-primary mk-band-primary" aria-label="Request appraisal and receive fee and availability within one business day">Request Appraisal — Fee &amp; Availability Within One Business Day</a>
+        <a href="tel:+19252162427" class="btn btn-outline-white" aria-label="Call 925-216-2427">Call 925-216-2427</a>
       </div>
     </div>
   </section>
 
   <!-- WHO WE WORK WITH -->
-  <section class="bg-white">
-    <div class="container">
-      <span class="label">Who We Work With</span>
-      <h2>Appraisal services for homeowners and professionals</h2>
-      <p style="max-width:560px;color:var(--muted);">I understand that many valuation requests come during important financial decisions. My role is to provide clarity so you can move forward with confidence.</p>
-      <div class="who-grid" role="list">
-        <a href="contact.html" class="who-card" role="listitem" style="text-decoration:none;display:block;cursor:pointer;" aria-label="Learn more about services for Homeowners and Families">
-          <h3>Homeowners &amp; Families</h3>
-          <p>Navigating the sale of a home, settling an estate, or going through a divorce — we provide clear answers to your most important financial question.</p>
-          <span style="font-size:0.8rem;color:var(--gold-dark);font-weight:500;margin-top:0.5rem;display:block;">Learn more &rarr;</span>
+  <section class="mk-who" aria-labelledby="who-heading">
+    <div class="mk-container">
+      <h2 id="who-heading" class="mk-who-title">Who We Work With</h2>
+      <div class="mk-who-grid" role="list">
+        <a href="contact.html" class="mk-who-card" role="listitem">
+          <svg class="mk-icon" viewBox="0 0 48 48" aria-hidden="true"><path d="M8 22 24 9l16 13"/><path d="M12 19v20h24V19"/><path d="M20 39V28h8v11"/></svg>
+          <h3>Homeowners</h3>
         </a>
-        <a href="estate-probate.html" class="who-card" role="listitem" style="text-decoration:none;display:block;cursor:pointer;" aria-label="Learn more about services for Executors and Trustees">
-          <h3>Executors &amp; Trustees</h3>
-          <p>Heirs, trustees, and estate administrators rely on our reports for asset distribution, IRS documentation, and estate planning purposes.</p>
-          <span style="font-size:0.8rem;color:var(--gold-dark);font-weight:500;margin-top:0.5rem;display:block;">Learn more &rarr;</span>
+        <a href="estate-probate.html" class="mk-who-card" role="listitem">
+          <svg class="mk-icon" viewBox="0 0 48 48" aria-hidden="true"><circle cx="17" cy="17" r="5"/><circle cx="31" cy="17" r="5"/><circle cx="24" cy="14" r="5"/><path d="M7 37c1-7 5-11 10-11s9 4 10 11"/><path d="M21 37c1-7 5-11 10-11s9 4 10 11"/></svg>
+          <h3>Attorneys</h3>
         </a>
-        <a href="date-of-death.html" class="who-card" role="listitem" style="text-decoration:none;display:block;cursor:pointer;" aria-label="Learn more about services for CPAs and Financial Advisors">
-          <h3>CPAs &amp; Financial Advisors</h3>
-          <p>Estate valuations and date of death appraisals for tax professionals, wealth advisors, and their clients.</p>
-          <span style="font-size:0.8rem;color:var(--gold-dark);font-weight:500;margin-top:0.5rem;display:block;">Learn more &rarr;</span>
+        <a href="estate-probate.html" class="mk-who-card" role="listitem">
+          <svg class="mk-icon" viewBox="0 0 48 48" aria-hidden="true"><circle cx="24" cy="16" r="7"/><path d="M10 41c1-9 7-14 14-14s13 5 14 14"/></svg>
+          <h3>Trust &amp; Estate<br>Professionals</h3>
         </a>
-        <a href="estate-probate.html" class="who-card" role="listitem" style="text-decoration:none;display:block;cursor:pointer;" aria-label="Learn more about services for Estate Attorneys">
-          <h3>Estate Attorneys</h3>
-          <p>Estate attorneys use our reports for settlement negotiations, trust administration, and estate planning (non-litigation matters).</p>
-          <span style="font-size:0.8rem;color:var(--gold-dark);font-weight:500;display:block;margin-top:0.5rem;">Learn more &rarr;</span>
-        </a>
-        <a href="divorce.html" class="who-card" role="listitem" style="text-decoration:none;display:block;cursor:pointer;" aria-label="Learn more about services for Divorce Mediators">
-          <h3>Divorce Mediators</h3>
-          <p>Mediators and collaborative divorce professionals use our neutral valuations to support fair, informed property settlements.</p>
-          <span style="font-size:0.8rem;color:var(--gold-dark);font-weight:500;margin-top:0.5rem;display:block;">Learn more &rarr;</span>
-        </a>
-        <a href="pre-listing.html" class="who-card" role="listitem" style="text-decoration:none;display:block;cursor:pointer;" aria-label="Learn more about services for REALTORS">
-          <h3>REALTORS®</h3>
-          <p>Independent pre-listing valuations, and appraisals for transactions involving estate or divorce situations.</p>
-          <span style="font-size:0.8rem;color:var(--gold-dark);font-weight:500;margin-top:0.5rem;display:block;">Learn more &rarr;</span>
+        <a href="pre-listing.html" class="mk-who-card" role="listitem">
+          <svg class="mk-icon" viewBox="0 0 48 48" aria-hidden="true"><path d="M8 22 24 9l16 13"/><path d="M12 19v20h24V19"/><path d="M20 39V28h8v11"/></svg>
+          <h3>Real Estate<br>Professionals</h3>
         </a>
       </div>
     </div>
   </section>
 
-  <!-- BOUNDARY NOTICE -->
-  <section class="section-sm">
-    <div class="container">
-      <div class="boundary-notice" role="note" aria-label="Service scope notice">
-        <p><strong>Please note:</strong> Appraisals are prepared for informational, settlement, lending, and planning purposes. Litigation support, expert witness testimony, depositions, and court appearances are not offered.</p>
-      </div>
-    </div>
-  </section>
-
-  <!-- QUOTE -->
-  <section class="section-sm" style="padding-top:0;">
-    <div class="container">
-      <div class="quote-block" role="complementary">
-        <blockquote>"Credible opinions require evidence. I investigate, document, and support every conclusion."</blockquote>
-        <cite>— Brandi Hudson, Certified Residential Appraiser #AR029078</cite>
-      </div>
-    </div>
-  </section>
-
-  <!-- DISAMBIGUATION -->
-  <section class="section-sm bg-white" style="padding-bottom:0;">
-    <div class="container">
-      <div style="background:var(--white);border:1px solid var(--border);border-left:3px solid var(--navy);border-radius:var(--radius);padding:1rem 1.5rem;font-size:0.82rem;color:var(--muted);line-height:1.7;max-width:820px;">
-        <strong style="color:var(--ink);">Note:</strong> Hudson Valuation Group is an independent residential real estate appraisal firm serving Contra Costa, Alameda, and San Joaquin Counties, California. Not affiliated with any business valuation, financial consulting, or corporate advisory firm of any similar name.
-      </div>
-    </div>
-  </section>
-
-  <!-- SERVICE AREA -->
-  <section class="bg-white">
-    <div class="container text-center">
-      <span class="label">Service Area</span>
-      <h2 id="counties-served">COUNTIES SERVED</h2>
-      <div class="hero-counties home-counties" role="navigation" aria-labelledby="counties-served">
-        <a href="service-areas.html#contra-costa" class="btn btn-outline">Contra Costa County</a>
-        <a href="service-areas.html#alameda" class="btn btn-outline">Alameda County</a>
-        <a href="service-areas.html#san-joaquin" class="btn btn-outline">San Joaquin County</a>
-      </div>
-      <p style="max-width:640px;margin:1.5rem auto 0;">Hudson Valuation Group serves homeowners, families, and professionals throughout Contra Costa, Alameda, and San Joaquin Counties.</p>
-      <p style="margin:1rem auto 0;"><a href="service-areas.html">View All Service Areas</a></p>
-    </div>
-  </section>
-
-  <!-- CTA -->
-  <section class="cta-section" aria-labelledby="cta-heading">
-    <div class="container">
-      <h2 id="cta-heading">Ready to get started?</h2>
-      <p>Tell us about your property and we'll respond within one business day with scope, timeline, and fee information.</p>
-      <div class="cta-actions">
-        <a href="contact.html" class="btn btn-gold" aria-label="Request appraisal and receive fee and availability within 24 hours">Request Appraisal — Fee &amp; Availability Within 24 Hours</a>
-        <a href="tel:+19252162427" class="btn btn-outline-white" aria-label="Call 925-216-2427">Call 925-216-2427</a>
-      </div>
+  <!-- COMPLIANCE NOTES (required existing wording, mockup-consistent styling) -->
+  <section class="mk-notes" aria-label="About our appraisal services">
+    <div class="mk-container">
+      <p>Brandi Hudson has 25 years of experience valuing Bay Area residential properties. Her experience in both residential valuation and real estate provides broad market context. Appraisal assignments are performed solely in her independent appraiser capacity.</p>
+      <p><strong>Please note:</strong> Appraisals are prepared for informational, settlement, lending, and planning purposes. Litigation support, expert witness testimony, depositions, and court appearances are not offered.</p>
+      <p><strong>Note:</strong> Hudson Valuation Group is an independent residential real estate appraisal firm serving Contra Costa, Alameda, and San Joaquin Counties, California. Not affiliated with any business valuation, financial consulting, or corporate advisory firm of any similar name.</p>
     </div>
   </section>
 
