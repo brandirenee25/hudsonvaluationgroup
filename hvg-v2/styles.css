@@ -840,3 +840,6 @@ a.who-card:focus-visible { outline: 3px solid var(--gold); outline-offset: 2px; 
 .hero-all-areas + .hero-tagline { margin-top: 0.25rem !important; }
 .tag .tag-sub { font-size: 0.85em; font-weight: normal; }
 .hero-content .hero-sub + .hero-actions { margin-top: 1.5rem; }
+/* Headshot framing (2026-10-12): more headroom so hair clears the top edge; extra space below sticky header on mobile */
+.hero-photo picture img, .hero-photo img { object-position: center 0%; }
+@media (max-width: 900px) { .hero { padding-top: 2rem; } }
