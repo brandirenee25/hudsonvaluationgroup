@@ -1060,3 +1060,10 @@ a.who-card:focus-visible { outline: 3px solid var(--gold); outline-offset: 2px; 
 .bw-h3 { font-family: var(--font-serif); font-size: 1.35rem; color: var(--ink); margin: 2rem 0 0.75rem; }
 .bw-market .content-main ul li { margin-bottom: 0.6rem; line-height: 1.65; }
 .bw-faq .faq-item { background: var(--white); }
+.bw-market .content-layout { display: block; }
+.bw-market .sidebar { position: static; display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 1.25rem; margin-top: 2rem; align-items: start; }
+.bw-market .sidebar .sidebar-card { margin: 0; }
+.bw-market .sidebar .btn-primary { color: var(--white); }
+@media (max-width: 1000px) { .bw-market .sidebar { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+@media (max-width: 600px) { .bw-market .sidebar { grid-template-columns: 1fr; } }
+.bw-market .sidebar-contact-item a { overflow-wrap: anywhere; min-width: 0; }
