@@ -1056,3 +1056,7 @@ a.who-card:focus-visible { outline: 3px solid var(--gold); outline-offset: 2px; 
   .bw-callout { padding: 1.5rem 1.25rem; }
   .bw-callout .btn, .bw-hero-actions .btn { width: 100%; white-space: normal; text-align: center; }
 }
+.bw-market { background: var(--white); }
+.bw-h3 { font-family: var(--font-serif); font-size: 1.35rem; color: var(--ink); margin: 2rem 0 0.75rem; }
+.bw-market .content-main ul li { margin-bottom: 0.6rem; line-height: 1.65; }
+.bw-faq .faq-item { background: var(--white); }
