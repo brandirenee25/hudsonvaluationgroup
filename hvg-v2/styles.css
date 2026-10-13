@@ -1083,10 +1083,10 @@ a.who-card:focus-visible { outline: 3px solid var(--gold); outline-offset: 2px; 
 .ho-ph-icon { width: 56px; height: 56px; fill: none; stroke: var(--gold-dark); stroke-width: 1.6; stroke-linecap: round; stroke-linejoin: round; opacity: 0.85; }
 .ho-ph-hero .ho-ph-icon, .ho-ph-feature .ho-ph-icon { width: 96px; height: 96px; }
 .ho-icon { width: 40px; height: 40px; }
-.ho-feature { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.6fr); gap: 2rem; align-items: center; background: var(--white); border: 1px solid var(--gold-light); border-left: 4px solid var(--gold); border-radius: 12px; padding: 1.5rem; box-shadow: var(--shadow-md); color: inherit; text-decoration: none; margin-bottom: 2rem; }
+.ho-feature { display: grid; grid-template-columns: 160px minmax(0, 1fr); gap: 1.25rem; align-items: center; background: var(--white); border: 1px solid var(--gold-light); border-left: 4px solid var(--gold); border-radius: 12px; padding: 1rem; box-shadow: var(--shadow-sm); color: inherit; text-decoration: none; margin-bottom: 1.25rem; }
 .ho-feature:hover { box-shadow: var(--shadow-lg); }
-.ho-feature h2 { font-family: var(--font-serif); color: var(--navy); margin: 0 0 0.6rem; }
-.ho-feature p { line-height: 1.7; color: var(--charcoal); margin: 0 0 1.25rem; }
+.ho-feature h2 { font-family: var(--font-serif); color: var(--navy); font-size: 1.35rem; margin: 0 0 0.35rem; }
+.ho-feature p { font-size: 0.95rem; line-height: 1.6; color: var(--charcoal); margin: 0 0 0.75rem; }
 .ho-kicker { font-size: 0.78rem !important; letter-spacing: 0.12em; text-transform: uppercase; color: var(--gold-dark) !important; font-weight: 600; margin: 0 0 0.4rem !important; }
 .ho-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1.25rem; }
 .ho-card { display: flex; flex-direction: column; align-items: flex-start; background: var(--white); border: 1px solid var(--border); border-radius: 12px; padding: 1.5rem; box-shadow: var(--shadow-sm); color: inherit; text-decoration: none; transition: var(--transition); }
@@ -1145,4 +1145,8 @@ a.who-card:focus-visible { outline: 3px solid var(--gold); outline-offset: 2px; 
   .ho-grid, .ho-gcards, .ho-off-grid { grid-template-columns: 1fr; }
   .ho-panel { padding: 1.1rem; }
 }
-.ho-feature-img { width: 100%; height: 100%; min-height: 200px; max-height: 340px; object-fit: cover; object-position: center 92%; border-radius: var(--radius); display: block; }
+.ho-feature-img { width: 160px; height: 140px; object-fit: cover; object-position: center 88%; border-radius: var(--radius); display: block; }
+@media (max-width: 900px) { .ho-feature-img { width: 100%; height: 120px; } }
+.ho-feature .btn { padding: 0.55rem 1.1rem; font-size: 0.9rem; }
+.mk-who-share { text-align: center; margin: 1.5rem 0 0; font-size: 0.92rem; color: var(--muted); }
+.mk-who-share a { color: var(--navy); font-weight: 600; }
