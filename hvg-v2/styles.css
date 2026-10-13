@@ -1145,3 +1145,4 @@ a.who-card:focus-visible { outline: 3px solid var(--gold); outline-offset: 2px; 
   .ho-grid, .ho-gcards, .ho-off-grid { grid-template-columns: 1fr; }
   .ho-panel { padding: 1.1rem; }
 }
+.ho-feature-img { width: 100%; height: 100%; min-height: 200px; max-height: 340px; object-fit: cover; object-position: center 92%; border-radius: var(--radius); display: block; }
