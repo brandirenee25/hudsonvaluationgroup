@@ -1067,3 +1067,81 @@ a.who-card:focus-visible { outline: 3px solid var(--gold); outline-offset: 2px; 
 @media (max-width: 1000px) { .bw-market .sidebar { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
 @media (max-width: 600px) { .bw-market .sidebar { grid-template-columns: 1fr; } }
 .bw-market .sidebar-contact-item a { overflow-wrap: anywhere; min-width: 0; }
+
+/* ── HOMEOWNERS + LOVED-ONE GUIDE (ho-) ── */
+.ho-hero { background: linear-gradient(90deg, var(--gold-pale) 0%, var(--gold-pale) 50%, #efe6d6 100%); padding: 3.5rem 0 3rem; }
+.ho-hero h1 { font-family: var(--font-serif); font-size: clamp(2.2rem, 4.2vw, 3.4rem); line-height: 1.08; color: var(--navy); margin: 0 0 0.5rem; }
+.ho-subtitle { font-family: var(--font-serif); font-size: clamp(1.2rem, 2vw, 1.55rem); color: var(--navy); margin: 0 0 1rem; }
+.ho-lead { max-width: 640px; line-height: 1.8; color: var(--charcoal); margin: 1rem 0 0; }
+.ho-hero-grid { display: grid; grid-template-columns: minmax(0, 1.4fr) minmax(0, 1fr); gap: 2.5rem; align-items: center; }
+.ho-section { background: #FBF8F2; padding: 3rem 0; }
+.ho-h2 { font-family: var(--font-serif); color: var(--navy); font-size: clamp(1.6rem, 3vw, 2.1rem); margin: 0 0 0.4rem; }
+.ho-sub { color: var(--slate); margin: 0 0 1.5rem; }
+.ho-ph { background: linear-gradient(135deg, #F3EBDD 0%, #E9DCC4 55%, #DFE6EE 100%); border-radius: var(--radius); display: flex; align-items: center; justify-content: center; min-height: 96px; }
+.ho-ph-hero { min-height: 260px; box-shadow: var(--shadow-md); }
+.ho-ph-feature { min-height: 200px; }
+.ho-ph-icon { width: 56px; height: 56px; fill: none; stroke: var(--gold-dark); stroke-width: 1.6; stroke-linecap: round; stroke-linejoin: round; opacity: 0.85; }
+.ho-ph-hero .ho-ph-icon, .ho-ph-feature .ho-ph-icon { width: 96px; height: 96px; }
+.ho-icon { width: 40px; height: 40px; }
+.ho-feature { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.6fr); gap: 2rem; align-items: center; background: var(--white); border: 1px solid var(--gold-light); border-left: 4px solid var(--gold); border-radius: 12px; padding: 1.5rem; box-shadow: var(--shadow-md); color: inherit; text-decoration: none; margin-bottom: 2rem; }
+.ho-feature:hover { box-shadow: var(--shadow-lg); }
+.ho-feature h2 { font-family: var(--font-serif); color: var(--navy); margin: 0 0 0.6rem; }
+.ho-feature p { line-height: 1.7; color: var(--charcoal); margin: 0 0 1.25rem; }
+.ho-kicker { font-size: 0.78rem !important; letter-spacing: 0.12em; text-transform: uppercase; color: var(--gold-dark) !important; font-weight: 600; margin: 0 0 0.4rem !important; }
+.ho-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1.25rem; }
+.ho-card { display: flex; flex-direction: column; align-items: flex-start; background: var(--white); border: 1px solid var(--border); border-radius: 12px; padding: 1.5rem; box-shadow: var(--shadow-sm); color: inherit; text-decoration: none; transition: var(--transition); }
+.ho-card:hover { box-shadow: var(--shadow-md); border-color: var(--gold-light); }
+.ho-card h3 { font-family: var(--font-serif); color: var(--navy); font-size: 1.2rem; margin: 0.75rem 0 0.4rem; }
+.ho-card p { font-size: 0.92rem; line-height: 1.6; color: var(--charcoal); margin: 0 0 1rem; flex: 1; }
+.ho-more { font-size: 0.88rem; color: var(--navy); font-weight: 600; }
+.ho-cta-band { background: #EEF2F7; padding: 2.25rem 0; }
+.ho-cta-inner { display: flex; align-items: center; gap: 1.5rem; flex-wrap: wrap; }
+.ho-cta-inner > div { flex: 1; min-width: 220px; border-left: 2px solid var(--gold); padding-left: 1.25rem; }
+.ho-cta-inner p { margin: 0; color: var(--slate); line-height: 1.6; }
+.ho-cta-title { font-family: var(--font-serif); font-size: 1.35rem; color: var(--navy) !important; margin-bottom: 0.25rem !important; }
+.ho-cta-icon { width: 48px; height: 48px; fill: none; stroke: var(--navy); stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round; }
+.ho-note { display: flex; gap: 1rem; align-items: center; background: var(--white); border: 1px solid var(--gold-light); border-radius: 12px; padding: 1.1rem 1.5rem; margin: 0 auto 2.25rem; max-width: 860px; box-shadow: var(--shadow-sm); }
+.ho-note p { margin: 0; color: var(--charcoal); line-height: 1.6; font-size: 1.02rem; }
+.ho-note-icon { flex: none; width: 36px; height: 36px; fill: none; stroke: var(--gold); stroke-width: 1.8; }
+.ho-gcards { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 1.25rem; }
+.ho-gcard { background: var(--white); border: 1px solid var(--border); border-radius: 12px; padding: 1rem 1rem 1.25rem; box-shadow: var(--shadow-sm); text-align: center; cursor: pointer; transition: var(--transition); display: flex; flex-direction: column; }
+.ho-gcard:hover { box-shadow: var(--shadow-md); }
+.ho-gcard.is-open { border-color: var(--gold); box-shadow: 0 0 0 2px var(--gold-light), var(--shadow-md); }
+.ho-gcard-title { margin: 1rem 0 0.5rem; font-size: 1.2rem; }
+.ho-toggle { background: none; border: 0; font: inherit; font-family: var(--font-serif); color: var(--navy); cursor: pointer; line-height: 1.25; padding: 0; }
+.ho-toggle:focus-visible { outline: 2px solid var(--gold); outline-offset: 3px; }
+.ho-gcard p { font-size: 0.9rem; line-height: 1.6; color: var(--charcoal); margin: 0 0 1rem; flex: 1; }
+.ho-open { display: inline-block; align-self: center; background: var(--navy); color: var(--white); border-radius: 6px; padding: 0.55rem 1.1rem; font-size: 0.85rem; }
+.ho-gcard:nth-child(even) .ho-open { background: var(--gold-dark); }
+.ho-gcard.is-open .ho-open span { display: inline-block; transform: rotate(180deg); }
+.ho-panel { margin-top: 1.75rem; background: var(--white); border: 1px solid var(--gold-light); border-radius: 12px; padding: 1.75rem; box-shadow: var(--shadow-sm); scroll-margin-top: 90px; }
+.ho-task-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); gap: 1rem; }
+.ho-task { background: #FBF8F2; border: 1px solid var(--border); border-radius: 10px; padding: 1.1rem 1.2rem; }
+.ho-task h3 { font-family: var(--font-sans); font-size: 0.82rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--navy); font-weight: 700; margin: 0 0 0.5rem; }
+.ho-task p { font-size: 0.9rem; line-height: 1.6; color: var(--charcoal); margin: 0 0 0.5rem; }
+.ho-task-wide { grid-column: 1 / -1; border-left: 3px solid var(--gold); background: var(--gold-pale); }
+.ho-xlink { color: var(--navy); font-weight: 500; overflow-wrap: anywhere; }
+.ho-ext { width: 14px; height: 14px; fill: none; stroke: currentColor; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; vertical-align: -2px; margin-left: 0.3rem; flex: none; }
+.ho-official { background: var(--white); border-top: 1px solid var(--gold-light); }
+.ho-off-grid { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 1rem; }
+.ho-off { display: flex; align-items: center; gap: 0.85rem; height: 100%; padding: 1rem; border: 1px solid #D6DEE8; border-radius: 10px; background: #F7F9FC; color: var(--ink); text-decoration: none; transition: var(--transition); }
+.ho-off:hover { border-color: var(--navy); background: var(--white); }
+.ho-off-icon { flex: none; width: 34px; height: 34px; fill: none; stroke: var(--navy); stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round; }
+.ho-off-text { flex: 1; display: flex; flex-direction: column; }
+.ho-off-name { font-weight: 700; font-size: 0.95rem; color: var(--navy); }
+.ho-off-desc { font-size: 0.82rem; color: var(--slate); line-height: 1.4; }
+.ho-off .ho-ext { width: 18px; height: 18px; color: var(--navy); }
+.ho-disc { padding: 2rem 0 2.5rem; }
+.ho-disc .bw-disclaimer { margin-top: 0.5rem; }
+.bw-guide { background: var(--white); padding: 2.5rem 0 0.5rem; }
+.bw-guide .ho-feature { margin-bottom: 0; }
+@media (max-width: 900px) {
+  .ho-hero-grid, .ho-feature { grid-template-columns: 1fr; }
+  .ho-ph-hero { min-height: 160px; }
+  .ho-ph-feature { min-height: 120px; }
+  .ho-grid, .ho-gcards, .ho-off-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+@media (max-width: 600px) {
+  .ho-grid, .ho-gcards, .ho-off-grid { grid-template-columns: 1fr; }
+  .ho-panel { padding: 1.1rem; }
+}
