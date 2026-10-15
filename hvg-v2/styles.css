@@ -1159,3 +1159,8 @@ a.who-card:focus-visible { outline: 3px solid var(--gold); outline-offset: 2px; 
 .mk-faq-list .faq-question { font-size: 1.05rem; margin: 0 0 0.4rem; }
 .mk-faq-list .faq-answer { line-height: 1.65; }
 .mk-faq .mk-faq-all { text-align: center; margin: 1.25rem 0 0; }
+/* Mobile: keep homepage FAQ heading + first Q/A clear of the ~83px sticky header when scrolled/linked to (2026-10-14) */
+@media (max-width: 600px) {
+  .mk-faq, .mk-faq .mk-section-label { scroll-margin-top: 104px; }
+  .mk-faq .mk-section-label { margin-bottom: 1.25rem; }
+}
