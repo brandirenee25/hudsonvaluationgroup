@@ -1150,3 +1150,12 @@ a.who-card:focus-visible { outline: 3px solid var(--gold); outline-offset: 2px; 
 .ho-feature .btn { padding: 0.55rem 1.1rem; font-size: 0.9rem; }
 .mk-who-share { text-align: center; margin: 1.5rem 0 0; font-size: 0.92rem; color: var(--muted); }
 .mk-who-share a { color: var(--navy); font-weight: 600; }
+
+/* ── HOMEPAGE COMPACT FAQ (2026-10-14) ── */
+.mk-faq { background: var(--bg); padding: 0 0 2.75rem; }
+.mk-faq .mk-container { max-width: 860px; }
+.mk-faq .mk-section-label { text-align: center; margin: 0 0 1rem; }
+.mk-faq-list .faq-item { padding: 1rem 0; }
+.mk-faq-list .faq-question { font-size: 1.05rem; margin: 0 0 0.4rem; }
+.mk-faq-list .faq-answer { line-height: 1.65; }
+.mk-faq .mk-faq-all { text-align: center; margin: 1.25rem 0 0; }
