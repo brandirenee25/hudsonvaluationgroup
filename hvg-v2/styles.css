@@ -842,6 +842,10 @@ a.who-card:focus-visible { outline: 3px solid var(--gold); outline-offset: 2px; 
 .hero-credline { font-size: 1rem; font-weight: 500; color: var(--navy); margin: 0 0 0.25rem; }
 .hero-all-areas + .hero-tagline { margin-top: 0.25rem !important; }
 .tag .tag-sub { font-size: 0.85em; font-weight: normal; }
+.tag-link { display: inline-flex; align-items: center; gap: 0.4rem; text-decoration: none; transition: var(--transition); }
+.tag-link svg { width: 14px; height: 14px; color: #0A66C2; flex-shrink: 0; }
+.tag-link:hover { border-color: var(--navy); color: var(--navy); text-decoration: none; }
+.tag-link:focus-visible { outline: 3px solid var(--gold); outline-offset: 2px; }
 .hero-content .hero-sub + .hero-actions { margin-top: 1.5rem; }
 /* Headshot framing (2026-10-12): more headroom so hair clears the top edge; extra space below sticky header on mobile */
 .hero-photo picture img, .hero-photo img { object-position: center 0%; }
