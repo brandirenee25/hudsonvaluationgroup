@@ -592,6 +592,7 @@ section { padding: 5rem 0; }
 .footer-social a { display: inline-flex; align-items: center; gap: 0.4rem; color: rgba(255,255,255,0.6); font-size: 0.82rem; text-decoration: none; transition: var(--transition); }
 .footer-social a:hover { color: var(--white); }
 .footer-social svg { width: 16px; height: 16px; flex-shrink: 0; }
+.footer-social a + a { margin-left: 1.25rem; }
 .footer-col h4 {
   color: var(--white);
   font-size: 0.75rem;
