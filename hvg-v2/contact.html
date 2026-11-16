@@ -194,7 +194,7 @@
   form.addEventListener('submit', function () { form.elements.form_elapsed_ms.value = Date.now() - started; });
   if (params.get('error') === '1') {
     var box = document.getElementById('form-error');
-    if (box) { box.hidden = false; }
+    if (box) { box.hidden = false; var show = function () { box.scrollIntoView({ block: 'center' }); }; show(); window.addEventListener('load', function () { setTimeout(show, 50); }); }
   }
 })();
 </script>

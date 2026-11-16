@@ -11,7 +11,7 @@ const CLIENT_REPLY_TO = 'brandi@hudsonvaluationgroup.com';
 const CLIENT_SUBJECT = 'We received your appraisal request | Hudson Valuation Group';
 
 const THANK_YOU = '/thank-you.html?sent=1';
-const ERROR_PAGE = '/contact.html?error=1#form';
+const ERROR_PAGE = '/contact.html?error=1';
 const MIN_FILL_MS = 3000;
 
 const PURPOSES = ['Estate / Trust', 'Date of Death', 'Divorce / Settlement', 'Pre-Listing', 'PMI Removal', 'Other'];
