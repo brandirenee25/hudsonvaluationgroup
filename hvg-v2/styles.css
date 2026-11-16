@@ -555,6 +555,8 @@ section { padding: 5rem 0; }
 .thankyou-icon { font-size: 3rem; margin-bottom: 1.5rem; }
 .thankyou-wrap h1 { margin-bottom: 1rem; }
 .thankyou-wrap p { color: var(--slate); margin-bottom: 2rem; }
+.thankyou-actions { display: flex; flex-direction: column; align-items: center; gap: 0.85rem; }
+.thankyou-actions .btn { min-width: 220px; }
 
 /* ── ACCESSIBILITY PAGE ── */
 .a11y-section { margin-bottom: 2.5rem; }
