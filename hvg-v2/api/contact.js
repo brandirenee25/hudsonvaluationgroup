@@ -157,7 +157,9 @@ module.exports = async function handler(req, res) {
   const elapsed = Number(clean(raw.form_elapsed_ms, 20));
   const startedAt = Number(clean(raw.form_started_at, 20));
   const fillMs = Number.isFinite(elapsed) && elapsed > 0 ? elapsed : (startedAt > 0 ? Date.now() - startedAt : NaN);
-  if (Number.isFinite(fillMs) && fillMs < MIN_FILL_MS) { console.log('contact: dropped (too fast)', fillMs); return redirect(res, '/thank-you.html'); }
+  // Spam: no page-load stamp means the form page was never loaded in a browser (direct POST) -> pretend success, send nothing.
+  if (!Number.isFinite(fillMs)) { console.log('contact: dropped (no load stamp)'); return redirect(res, '/thank-you.html'); }
+  if (fillMs < MIN_FILL_MS) { console.log('contact: dropped (too fast)', fillMs); return redirect(res, '/thank-you.html'); }
 
   const f = {
     name: oneLine(clean(raw.name, 120)),
